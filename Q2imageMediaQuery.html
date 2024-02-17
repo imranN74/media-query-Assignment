@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Media Query</title>
+    <style>
+      .gallary {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .gallary img {
+        width: 30%;
+      }
+
+      @media (max-width: 800px) {
+        .gallary img {
+          width: 45%;
+        }
+      }
+      @media (max-width: 500px) {
+        .gallary img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallary">
+      <img
+        src="https://fastly.picsum.photos/id/969/200/300.jpg?hmac=c2_qrnkxo7rpO3oK-Lto9vTVaCKc5sow7GjMpKiPQN8"
+        alt=""
+      /><img
+        src="https://fastly.picsum.photos/id/969/200/300.jpg?hmac=c2_qrnkxo7rpO3oK-Lto9vTVaCKc5sow7GjMpKiPQN8"
+        alt=""
+      /><img
+        src="https://fastly.picsum.photos/id/969/200/300.jpg?hmac=c2_qrnkxo7rpO3oK-Lto9vTVaCKc5sow7GjMpKiPQN8"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
